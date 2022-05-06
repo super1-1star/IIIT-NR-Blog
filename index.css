@@ -1,0 +1,14 @@
+.bg-image-jumbo{
+    background-image: url("https://www.iiitnr.ac.in/sites/default/files/homepage_banner/WhatsApp%20Image%202020-04-29%20at%2012.51.35%20PM.jpeg") ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+  }
+
+  .pbt-10{
+      padding-top: 25%;
+    padding-bottom: 25%;
+
+  }
