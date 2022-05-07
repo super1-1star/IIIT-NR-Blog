@@ -8,7 +8,19 @@
   }
 
   .pbt-10{
-      padding-top: 25%;
-    padding-bottom: 25%;
+      padding-top: 20%;
+    padding-bottom: 20%;
 
+  }
+
+  #alertmessage{
+    display: none;
+  }
+
+  .jumboWidth{
+    width: 75%;
+  }
+
+  .jumboBgColor{
+    background-color: rgba(73, 70, 70, 0.562);
   }

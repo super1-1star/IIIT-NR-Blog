@@ -43,17 +43,17 @@
                         <a href="./index.html" class="list-link current">Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="./Section/Categories.html" class="list-link">Categories</a>
+                        <a href="./Categories.html" class="list-link">Categories</a>
                     </li>
 
                     <li class="list-item">
-                        <a href="./Section/ourTeam.html" class="list-link">Our Team</a>
+                        <a href="./ourTeam.html" class="list-link">Our Team</a>
                     </li>
                     <li class="list-item">
                         <a href="https://www.iiitnr.ac.in/" target="_blank" class="list-link">About IIIT-NR</a>
                     </li>
                     <li class="list-item">
-                        <a href="./Section/Contact.html" class="list-link">Contact</a>
+                        <a href="https://www.iiitnr.ac.in/" class="list-link">Contact</a>
                     </li>
 
                     <li class="list-item screen-lg-hidden">
@@ -64,8 +64,9 @@
 
             <div class="list list-right">
                 <button class="btn place-items-center" id="theme-toggle-btn">
-                    <i class="ri-sun-line sun-icon"></i>
                     <i class="ri-moon-line moon-icon"></i>
+                    <i class="ri-sun-line sun-icon"></i>
+
                 </button>
 
                 <button class="btn place-items-center" id="search-icon">
@@ -78,18 +79,9 @@
                 </button>
 
 
-                <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden" data-toggle="modal"
-                    data-target="#exampleModalCenter">
+                <a href="#newsletterContainer" class="btn sign-up-btn fancy-border screen-sm-hidden">
                     <span>Get A Quote</span>
                 </a>
-
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                    Launch demo modal
-                </button>
-
-                <!-- Modal -->
-               
 
 
             </div>
@@ -103,7 +95,7 @@
 
         <div class="form-container-inner">
 
-            <form action="" class="form">
+            <form action="#quickReadSection" class="form">
                 <input class="form-input" type="text" placeholder="What are you looking for?">
                 <button class="btn form-btn" type="submit">
                     <i class="ri-search-line"></i>
@@ -126,14 +118,14 @@
 
         <div class="featured-articles-container container ">
             <!-- Jumbotron -->
-            <div class="bg-image  text-center shadow-1-strong rounded pbt-10 text-white bg-image-jumbo" <h1
-                class="mb-3 h2">Jumbotron</h1>
+            <div class="bg-image  text-center shadow-1-strong rounded pbt-10 text-white bg-image-jumbo">
+                <div class="jumboWidth jumboBgColor ms-auto me-auto p-5 ">
+                    <h1>Welcome to</h1>
+                    <h2 class="mb-3">Dr. S. P. Mukherjee International Institute of Information Technology - Naya Raipur
+                    </h2>
 
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium
-                    labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum
-                    neque maiores dolorem unde? Aut dolorum quod excepturi fugit.
-                </p>
+
+                </div>
             </div>
         </div>
     </section>
@@ -141,7 +133,7 @@
 
 
     <!-- Featured articles -->
-    <section class="featured-articles section section-header-offset">
+    <section class="featured-articles section section-header-offset " id="featuredSection">
 
         <div class="featured-articles-container container d-grid">
 
@@ -151,7 +143,7 @@
                     <h3 class="headline fancy-border">
                         <span class="place-items-center">Breaking news</span>
                     </h3>
-                    <span class="headline-description">Apple announces a new partnership...</span>
+                    <span class="headline-description">IIIT-NR in News...</span>
                 </div>
 
                 <a href="./post.html" class="article featured-article featured-article-1">
@@ -313,7 +305,7 @@
     </section>
 
     <!-- Quick read -->
-    <section class="quick-read section">
+    <section class="quick-read section" id="quickReadSection">
 
         <div class="container">
 
@@ -544,7 +536,7 @@
             </div>
 
             <div class="see-more-container">
-                <a href="#" class="btn see-more-btn place-items-center">See more <i
+                <a href="#featuredSection" class="btn see-more-btn place-items-center">See more <i
                         class="ri-arrow-right-s-line"></i></i></a>
             </div>
 
@@ -599,21 +591,30 @@
     <!-- Newsletter -->
     <section class="newsletter section">
 
-        <div class="container">
+        <div class="container" id="newsletterContainer">
 
             <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
 
             <div class="form-container-inner">
-                <h6 class="title newsletter-title">Subscribe to NewsFlash</h6>
-                <p class="newsletter-description">Lorem ipsum dolor sit amet consectetur adipisicing quaerat
-                    dignissimos.</p>
+                <h6 class="title newsletter-title">Subscribe to IIIT-NR Blogs</h6>
+                <p class="newsletter-description">Stay up to date by subscribing to our blog
+                    .</p>
 
-                <form action="" class="form">
+                <div class="form">
                     <input class="form-input" type="text" placeholder="Enter your email address">
-                    <button class="btn form-btn" type="submit">
+                    <button class="btn form-btn" onclick="alertMessagehandler()">
                         <i class="ri-mail-send-line"></i>
                     </button>
-                </form>
+
+                </div>
+                <div id="alertMessage" class="alert alert-success w-50" role="alert">
+                    <h4 class="alert-heading">Well done! Thank you for getting in touch! </h4>
+                    <p></p> You successfully subscribed to our newsletter. </p>
+                    <hr>
+
+                    </p>
+                </div>
+
 
             </div>
 
@@ -662,22 +663,22 @@
 
                 <ul class="footer-list list">
                     <li class="list-item">
-                        <a href="#" class="list-link">Interview</a>
+                        <a href="./blogs/interview.html" class="list-link">Interview</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Technovate</a>
+                        <a href="./blogs//technovate.html" class="list-link">Technovate</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Event</a>
+                        <a href="./blogs/event.html" class="list-link">Event</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Health</a>
+                        <a href="./blogs/health.html" class="list-link">Health</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Nature</a>
+                        <a href="./blogs/nature.html" class="list-link">Nature</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">See more ...</a>
+                        <a href="./Section/Categories.html" class="list-link">See more ...</a>
                     </li>
                 </ul>
 
@@ -688,19 +689,19 @@
 
                 <ul class="footer-list list">
                     <li class="list-item">
-                        <a href="#" class="list-link">Home</a>
+                        <a href="./index.html" class="list-link">Home</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Categories</a>
+                        <a href="./Section/Categories.html" class="list-link">Categories</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Our Team</a>
+                        <a href="./Section/ourTeam.html" class="list-link">Our Team</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">About IIIT-NR</a>
+                        <a href="https://www.iiitnr.ac.in/" class="list-link">About IIIT-NR</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Contact</a>
+                        <a href="https://www.iiitnr.ac.in/" class="list-link">Contact</a>
                     </li>
                 </ul>
 
@@ -716,6 +717,7 @@
     </footer>
     <!-- ------------------------------------------------------------------- -->
 
+
     <!-- Swiper.js -->
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -724,6 +726,16 @@
     <!-- Custom script -->
     <script src="./assets/js/main.js"></script>
     <script src="./index.js"></script>
+
+    <script>
+        function alertMessagehandler() {
+
+            var x = document.getElementById("alertMessage");
+
+            x.style.display = "block";
+
+        }
+    </script>
 </body>
 
 </html>
